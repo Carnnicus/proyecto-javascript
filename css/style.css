@@ -1,7 +1,28 @@
 body{
-    background-color: crimson;
+    background-color: white;
 }
 
-img{
-    width: 300px;
+.imgLogo {
+    height: 50px;
+    width: 120px;
+}
+
+#divSelect{
+    padding-top: 40px;
+}
+
+#btn1{
+    padding-top: 40px;
+}
+
+.subtitulos{
+    padding-top: 50px;
+}
+
+.parrafos{
+    padding-top: 20px;
+}
+
+#tabla{
+    padding-top: 40px;
 }

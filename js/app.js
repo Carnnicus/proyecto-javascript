@@ -100,38 +100,46 @@ let primarcas = [
      condicion: "Traidor",
     },
 ]
+function guardarLocalStorage(){
+    localStorage.setItem("Primarcas y Legiones", JSON.stringify(primarcas))
+}
+guardarLocalStorage()
 
-console.table(primarcas)
+function obtenerLocalStorage(){
+    let getSto = JSON.parse(localStorage.getItem("Primarcas y Legiones"))
+    console.table(getSto)
+}
+
+obtenerLocalStorage()
 
 function aleatorio(n1, n2) {
     return Math.round(Math.random() * (n2 - n1) + parseInt(n1));
 }
 
-let elegir = prompt("Si quiere elegir un primarca presione 1, si prefiere un primarca random presione 2")
-
-switch (elegir){
-    case "1": 
-        let numPrimarca = prompt("Ingrese Número de Primarca (1 al 20): ")
-        let numLegion = primarcas.filter(num => num.numero == numPrimarca)
-        console.table(numLegion)
-        break;
-    case "2":
-        primarcaAleatorio = aleatorio(1, 20)
-        console.table(primarcas[primarcaAleatorio])
-        break;
-    default:
-        console.log("Elija una opción válida")
-        break;
+function randomPrimarch(){
+    primarcaAleatorio = aleatorio(1, 20)
+    let primarca = Object.values(primarcas[primarcaAleatorio])
+    let nombre = document.getElementById("primarch1")
+    nombre.innerHTML = `Primarca: ${primarca[0]}`
+    let legion = document.getElementById("legion1")
+    legion.innerHTML = `Legion: ${primarca[2]}`
+    let condicion = document.getElementById("condicion1")
+    condicion.innerHTML = `Condicion: ${primarca[3]}`
 }
 
-const traidorLeal = prompt("1- Lista de Primarcas Leales / 2- Lista de Primarcas Traidores") 
-
-if (traidorLeal === "1"){
-    let leales = primarcas.filter(leales => leales.condicion === "Leal")
-    console.table(leales)
-}else{
-    let traidores = primarcas.filter(traidor => traidor.condicion === "Traidor")
-    console.table(traidores)
+function primarchSelected(){
+    for (i = 0; i < primarcas.length; i += 1){
+        let primarca = Object.values(primarcas[i])
+        let selected = document.getElementById("selected")
+        if (primarca[0] === selected.value ){
+            let nombre = document.getElementById("primarch")
+            nombre.innerHTML = `Primarca: ${primarca[0]}`
+            let legion = document.getElementById("legion")
+            legion.innerHTML = `Legion: ${primarca[2]}`
+            let condicion = document.getElementById("condicion")
+            condicion.innerHTML = `Condicion: ${primarca[3]}`
+        }
+    }
 }
 
 function crearMarine(nombre, legion, habilidad){
@@ -148,5 +156,43 @@ let habilidad= prompt("Que habilidad tiene su marine?: ")
 
 let marine = new crearMarine(nombre, legion, habilidad)
 console.table(marine)
+
+function elegirLegion(){
+    let legionSelector = document.getElementById("legionSelector")
+    let legionElegida = legionSelector.value 
+    document.getElementById("legionSeleccionada").innerText = `${legionElegida}`
+}
+
+/**const ejercito = [
+    {nombre: "Intercessor Pesado", puntos: 5},
+    {nombre: "Intercessor De Asalto", puntos: 4},
+    {nombre:"Sargento Erradicador", puntos: 20},
+    {nombre:"Guardia Sanguinario", puntos: 10},
+    {nombre:"Capitan", puntos: 20},
+    {nombre:"Teniente", puntos: 15},
+    {nombre:"Dreadnought", puntos: 60},
+    {nombre:"Leman Russ Tank", puntos: 100},
+    {nombre:"Primarca", puntos: 200}
+]
+
+switch (army){
+    case "1": 
+        let armySelector = document.getElementById("armySelector")
+        let selectedArmy = armySelector.value
+
+}
+
+
+function elegirUnidad(){
+    let armySelector = document.createElement("select")
+    let armyElegida = armySelector.value 
+    let li1 = document.createElement("li")
+    let l1Army = document.createTextNode(armyElegida)
+    ol.appendChild(l1Army)
+}**/
+
+
+
+ 
 
 

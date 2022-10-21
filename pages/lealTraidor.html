@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>W40K - Leales y Traidores</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img class="imgLogo" src="../assets/logo.png" alt="Logo Warhammer"></a>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  <a class="nav-link" href="#">Primarcas Leales y Traidores</a>
+                  <a class="nav-link">Razas</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section>
+      <center>
+        <h1>Listado De Leales y Traidores</h1>
+    
+        <h5>Mostrar:</h5>
+        <button id="btnLeal">Leales</button>
+        <button id="btnTraidor">Traidores</button>
+        <div id="tabla">
+          <table id="tablaLealTraidor" style="border: solid black; padding-top: 30px;">
+            <th style="border: solid black;">Primarca</th>
+            <th style="border: solid black;">Condición</th>
+          </table>
+        </div>
+      </center>
+   </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/lealTraidor.js"></script>
+</body>
+</html>

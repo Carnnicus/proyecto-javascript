@@ -4,14 +4,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Primarcas</title>
+    <title>Crea Tu Ejército</title>
 </head>
 <body>
 
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img class="imgLogo" src="assets/logo.png" alt="Logo Warhammer"></a>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  <a class="nav-link" href="pages/lealTraidor.html">Primarcas Leales y Traidores</a>
+                  <a class="nav-link">Razas</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section>
+
+        <center><h1>Warhammer 40K - Información Básica De Los Primarcas</h1></center>
+
+        <center>
+
+          <h5 class="subtitulos">Elija Un Primarca De La Lista:</h5>
+  
+          <div id="divSelect">
+            <select id="selected" onclick="primarchSelected()">
+              <option value="">Elija Un Primarca</option>
+              <option value="Lion El'Jonson">Lion El'Jonson</option>
+              <option value="Fulgrim">Fulgrim</option>
+              <option value="Perturabo">Perturabo</option>
+              <option value="Jaghatai Khan">Jaghatai Khan</option>
+              <option value="Leman Russ">Leman Russ</option>
+              <option value="Rogal Dorn">Rogal Dorn</option>
+              <option value="Konrad Curze">Konrad Curze</option>
+              <option value="Sanguinius">Sanguinius</option>
+              <option value="Ferrus Manus">Ferrus Manus</option>
+              <option value="Angron">Angron</option>
+              <option value="Roboute Guilliman">Roboute Guilliman</option>
+              <option value="Mortarion">Mortarion</option>
+              <option value="Magnus El Rojo">Magnus El Rojo</option>
+              <option value="Horus Lupercal">Horus Lupercal</option>
+              <option value="Lorgar Aureliano">Lorgar Aureliano</option>
+              <option value="Vulkan">Vulkan</option>
+              <option value="Corvus Corax">Corvus Corax</option>
+              <option value="Alpharius Omegon">Alpharius Omegon</option>
+            </select> 
+          </div>
+  
+          <div class="parrafos">
+            <p id="primarch"></p>
+            <p id="legion"></p>
+            <p id="condicion"></p>
+          </div>
+  
+          <h5 class="subtitulos">Elija Un Primarca Aleatoriamente:</h5>
+  
+          <div id="btn1"><button onclick="randomPrimarch()">Primarca Aleatorio</button></div>
+          
+          <div class="parrafos">
+            <p id="primarch1"></p>
+            <p id="legion1"></p>
+            <p id="condicion1"></p>
+          </div>
+
+        </center>
+
+        <!--<label for="">Legion</label>
+        <select id="legionSelector" onchange="elegirLegion()">
+            <option value="" disable selected>Elija Legion</option>
+            <option value="Angeles Oscuros">Angeles Oscuros</option>
+            <option value="Hijos Del Emperador">Hijos Del Emperador</option>
+            <option value="Guerreros de Hierro">Guerreros de Hierro</option>
+            <option value="Cicatrices Blancas">Cicatrices Blancas</option>
+            <option value="Lobos Espaciales">Lobos Espaciales</option>
+            <option value="Puños Imperiales">Puños Imperiales</option>
+            <option value="Amos De La Noche">Amos De La Noche</option>
+            <option value="Angeles Sangrientos">Angeles Sangrientos</option>
+            <option value="Manos De Hierro">Manos De Hierro</option>
+            <option value="Devoradores De Mundos">Devoradores De Mundos</option>
+            <option value="Ultramarines">Ultramarines</option>
+            <option value="Guardia De La Muerte">Guardia De La Muerte</option>
+            <option value="Mil Hijos">Mil Hijos</option>
+            <option value="Lobos Lunares">Lobos Lunares</option>
+            <option value="Portadores De La Palabra">Portadores De La Palabra</option>
+            <option value="Salamandras">Salamandras</option>
+            <option value="Guardia Del Cuervo">Guardia Del Cuervo</option>
+            <option value="Legion Alfa">Legion Alfa</option>
+        </select>
+        <br>
+        <br>
+        <label for="">Unidad</label>
+        <select id="armySelector">
+            <option value="" disable selected>Elija Unidad</option>
+            <option value="Intercessor Pesado">Intercessor Pesado</option>
+            <option value="Intercessor De Asalto">Intercessor De Asalto</option>
+            <option value="Sargento Erradicador">Sargento Erradicador</option>
+            <option value="Guardia Sanguinario">Guardia Sanguinario</option>
+            <option value="Capitan">Capitan</option>
+            <option value="Teniente">Teniente</option>
+            <option value="Dreadnought">Dreadnought</option>
+            <option value="Leman Russ Tank">Leman Russ Tank</option>
+            <option value="Primarca">Primarca</option>
+        </select>
+        <button id="agregarUnidad">Agregar Unidad</button>
+        <br>
+        <hr>-->
+        
+        
+
+
+
+    </section>
+
     <center><img src="assets/whorus.jpg" alt=""></center>
     
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
