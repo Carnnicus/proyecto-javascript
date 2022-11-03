@@ -17,7 +17,7 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                   <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                  <a class="nav-link" href="lealTraidor.html">Primarcas Leales y Traidores</a>
+                  <a class="nav-link" href="juegos.html">W40K en Steam</a>
                   <a class="nav-link" href="ejercito.html">Crea Tu Ejército</a>
                 </div>
               </div>
@@ -26,22 +26,27 @@
     </header>
 
     <section>
-      <center>
-        <h1>Listado De Leales y Traidores</h1>
-    
-        <h5>Mostrar:</h5>
-        <button id="btnLeal">Leales</button>
-        <button id="btnTraidor">Traidores</button>
+      <center><h1>Busca los juegos en Steam!</h1></center>
+        
+        <label for="steam" style="padding-top: 50px;">Nombre del Juego: </label>
+        <input type="text" name="" id="steam">
+        <button id="btnSteam">Buscar</button>
+        <button id="btnTodos">Listar Todos</button>
+
+        <div id="steamGames"></div>
+
+        <!--<button id="btnTraidor">Traidores</button>
         <div id="tabla">
           <table id="tablaLealTraidor" style="border: solid black; padding-top: 30px;">
             <th style="border: solid black;">Primarca</th>
             <th style="border: solid black;">Condición</th>
           </table>
         </div>
-      </center>
+      </center>-->
    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/lealTraidor.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/juegos.js"></script>
 </body>
 </html>

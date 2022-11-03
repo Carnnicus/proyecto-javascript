@@ -1,0 +1,61 @@
+[
+    {
+        "nombre":"DARKTIDE",
+        "lanzamiento":"Noviembre 2022",
+        "link":"https://store.steampowered.com/app/1361210/Warhammer_40000_Darktide/"
+    },
+
+    {
+        "nombre":"TOTAL WAR: WARHAMMER 3",
+        "lanzamiento":"Febrero 2022",
+        "link":"https://store.steampowered.com/app/1142710/Total_War_WARHAMMER_III/"
+    },
+
+    {
+        "nombre":"TOTAL WAR: WARHAMMER 2",
+        "lanzamiento":"Septiembre 2017",
+        "link":"https://store.steampowered.com/app/594570/Total_War_WARHAMMER_II/"
+    },
+
+    {
+        "nombre":"VERMINTIDE 2",
+        "lanzamiento":"Marzo 2018",
+        "link":"https://store.steampowered.com/app/552500/Warhammer_Vermintide_2/"
+    },
+
+    {
+        "nombre":"TOTAL WAR: WARHAMMER",
+        "lanzamiento":"Mayo 2016",
+        "link":"https://store.steampowered.com/app/364360/Total_War_WARHAMMER/"
+    },
+
+    {
+        "nombre":"CHAOS GATE",
+        "lanzamiento":"Mayo 2022",
+        "link":"https://store.steampowered.com/app/1611910/Warhammer_40000_Chaos_Gate__Daemonhunters/"
+    },
+
+    {
+        "nombre":"BATTLESECTOR",
+        "lanzamiento":"Julio 2021",
+        "link":"https://store.steampowered.com/app/1295500/Warhammer_40000_Battlesector/"
+    },
+
+    {
+        "nombre":"CHAOSBANE",
+        "lanzamiento":"Mayo 2019",
+        "link":"https://store.steampowered.com/app/774241/Warhammer_Chaosbane/"
+    },
+
+    {
+        "nombre":"MECHANICUS",
+        "lanzamiento":"Noviembre 2018",
+        "link":"https://store.steampowered.com/app/673880/Warhammer_40000_Mechanicus/"
+    },
+
+    {
+        "nombre":"INQUISITOR MARTYR",
+        "lanzamiento":"Junio 2018",
+        "link":"https://store.steampowered.com/app/527430/Warhammer_40000_Inquisitor__Martyr/"
+    }
+]

@@ -38,3 +38,21 @@ body{
 #listaEjercito{
     padding-top: 30px;
 }
+
+#par{
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+#tableContainer{
+    padding-top: 20px;
+}
+
+h2{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#steamGames{
+    padding-top: 50px;
+}

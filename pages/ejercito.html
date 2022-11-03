@@ -17,7 +17,7 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                   <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                  <a class="nav-link" href="lealTraidor.html">Primarcas Leales y Traidores</a>
+                  <a class="nav-link" href="juegos.html">W40K en Steam</a>
                   <a class="nav-link" href="ejercito.html">Crea Tu Ejército</a>
                 </div>
               </div>
@@ -26,32 +26,40 @@
     </header>
 
     <center><h1>Armá tu ejército</h1></center>
+    
+    <h2>Seleccioná Tus Unidades</h2>
 
     <section>
-        <div id="divSelect">
-            <select name="" id="unit"> 
-                <option value="">Elija Unidad</option>
-                <option value="Intercessor Pesado">Intercessor Pesado</option>
-                <option value="Intercessor De Asalto">Intercessor De Asalto</option>
-                <option value="Sargento Erradicador">Sargento Erradicador</option>
-                <option value="Guardia Sanguinario">Guardia Sanguinario</option>
-                <option value="Capitan">Capitan</option>
-                <option value="Teniente">Teniente</option>
-                <option value="Dreadnought">Dreadnought</option>
-                <option value="Leman Russ Tank">Leman Russ Tank</option>
-                <option value="Primarca">Primarca</option>
-            </select>
+        <select name="" id="unit"> 
+            <option value="">Elija Unidad</option>
+            <option value="0">Intercessor Pesado</option>
+            <option value="1">Intercessor De Asalto</option>
+            <option value="2">Sargento Erradicador</option>
+            <option value="3">Guardia Sanguinario</option>
+            <option value="4">Capitan</option>
+            <option value="5">Teniente</option>
+            <option value="6">Dreadnought</option>
+            <option value="7">Leman Russ Tank</option>
+            <option value="8">Primarca</option>
+        </select>
+        
+
+
+        <button id="addUnit">Agregar</button>
+
+        <div id="tableContainer">
+          <table id="tablaEjercito">
+            <th style="border: solid black;">Unidad</th>
+            <th style="border: solid black;">Puntos</th>
+          </table>
         </div>
 
-
-        <div id="btnUnit"><button id="addUnit">Agregar</button></div>
-
-        <ul id="listaEjercito">
-
-        </ul>
+        <p id="par"></p>
 
 
     </section>
+
+    
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
