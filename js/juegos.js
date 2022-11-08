@@ -15,7 +15,7 @@ const listarTodos = (games) => {
         <hr>
         <p>Nombre: ${nombre}</p>
         <p>Lanzamiento: ${lanzamiento}</p>
-        <p>Link: ${link}</p>
+        <p>Link:<a href="${link}" target="_blank">${link}</a></p>
         <hr>`
     });
 }
@@ -34,7 +34,7 @@ function buscador(){
                 juegos.innerHTML =`<hr>
                     <p>Nombre: ${juego.nombre}</p>
                     <p>Lanzamiento: ${juego.lanzamiento}</p>
-                    <p>Link: ${juego.link}</p>
+                    <p>Link:<a href="${juego.link}" target="_blank">${juego.link}</a></p>
                     <hr>`
             })
         }else{
