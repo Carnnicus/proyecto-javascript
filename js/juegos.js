@@ -7,7 +7,7 @@ const todos = document.getElementById('btnTodos')
 
 const listarTodos = (games) => {
     let juegos = document.getElementById("steamGames")
-
+    juegos.innerHTML = ""
     games.forEach(y => {
         const {nombre, lanzamiento, link} = y
 
@@ -21,25 +21,26 @@ const listarTodos = (games) => {
 }
 
 function buscador(){
-    let ingreso = document.getElementById("steam").value
+    let ingreso = document.getElementById("steam").value.toUpperCase()
     let juegos = document.getElementById("steamGames")
     fetch("../data/juegos.json")
     .then((res) => {
         return res.json()
     })
     .then((data) => {
-        data.forEach(x =>{
-            if(x.nombre == ingreso.toUpperCase()){
+        const filtro = data.filter(juego => juego.nombre === ingreso)
+        if (filtro.length > 0){
+            filtro.forEach(juego => {
                 juegos.innerHTML =`<hr>
-        <p>Nombre: ${x.nombre}</p>
-        <p>Lanzamiento: ${x.lanzamiento}</p>
-        <p>Link: ${x.link}</p>
-        <hr>`
-            }else{
-                swal("El juego no existe")
-            }
+                    <p>Nombre: ${juego.nombre}</p>
+                    <p>Lanzamiento: ${juego.lanzamiento}</p>
+                    <p>Link: ${juego.link}</p>
+                    <hr>`
+            })
+        }else{
+            swal('El juego no existe')
+        }
         })
-    }) 
         
     .catch((err) => console.log(err))
 }
@@ -55,13 +56,7 @@ const getArr = () => {
     .catch((err) => console.log(err))
 }
 
-function btnOff(){
-    btnTodos = document.getElementById("btnTodos")
-    btnTodos.disabled = true
-}
-
 todos.addEventListener('click', getArr)
-todos.addEventListener('click', btnOff)
 buscar.addEventListener('click', buscador)
 
 
